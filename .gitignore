@@ -1,2 +1,3 @@
 dividas.db
 /venv/*
+*.pyc
