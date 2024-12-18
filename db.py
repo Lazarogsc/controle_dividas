@@ -30,7 +30,6 @@ class Database:
         cursor = self.conn.cursor()
         cursor.execute('SELECT id, descricao, valor, mes FROM historico')
         dividas_pagas = cursor.fetchall()
-        self.conn.close()
         return dividas_pagas
     
     def delete_history(self, id_):
